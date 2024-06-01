@@ -1,28 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView, ScrollView, StyleSheet, View, Button } from 'react-native';
+import Header from './Header';
 
-export default function App() {
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style= {styles.text}>
-        My name is <Text style= {styles.boldText}>Nana Kwasi</Text>
-      </Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <Header />
+        
+      </ScrollView>
+    </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fda',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#F7F0E8',
+    paddingBottom: 25,
+    paddingTop: 25,
   },
-  text: {
-    fontSize: 24,
-  },
-  boldText: {
-    fontWeight: 'bold',
-  }
+  
 });
+
+export default App;

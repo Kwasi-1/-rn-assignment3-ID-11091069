@@ -8,10 +8,12 @@ const Header = () => {
         <Text style={styles.greeting}>Hello, Devs</Text>
         <Text style={styles.subtitle}>14 tasks today</Text>
       </View>
-      <Image
-        source={require('./assets/person.png')}
-        style={styles.userImage}
-      />
+      <View style= {styles.userImageContainer}>
+        <Image
+          source={require('./assets/person.png')}
+          style={styles.userImage}
+        />
+      </View>
     </View>
   );
 };
@@ -33,9 +35,13 @@ const styles = StyleSheet.create({
   userImage: {
     width: 40,
     height: 40,
-    borderRadius: '50%',
-    backgroundColor: '#fff'
   },
+  userImageContainer: {
+    borderRadius: '50%',
+    backgroundColor: '#fff',
+    padding: 5
+  },
+
 });
 
 export default Header;
