@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View, Button } from 'react-native';
 import Header from './Header';
 import SearchBar from './SeachBar';
+import Categories from './Categories';
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <ScrollView>
         <Header />
         <SearchBar/>
+        <Categories/>
       </ScrollView>
     </SafeAreaView>
   );
