@@ -9,7 +9,7 @@ const Header = () => {
         <Text style={styles.subtitle}>14 tasks today</Text>
       </View>
       <View style= {styles.userImageContainer}>
-        <Image
+      <Image
           source={require('./assets/person.png')}
           style={styles.userImage}
         />

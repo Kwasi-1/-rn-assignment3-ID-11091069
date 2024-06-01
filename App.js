@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View, Button } from 'react-native';
 import Header from './Header';
+import SearchBar from './SeachBar';
 
 
 const App = () => {
@@ -8,7 +9,7 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <Header />
-        
+        <SearchBar/>
       </ScrollView>
     </SafeAreaView>
   );
