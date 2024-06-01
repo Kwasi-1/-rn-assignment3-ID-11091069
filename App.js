@@ -14,6 +14,9 @@ const App = () => {
         <SearchBar/>
         <Categories/>
         <TaskList/>
+        <View style={styles.buttonContainer}>
+          <Button title="Add a Task" onPress={() => alert('Button Pressed')} color="#ff5733" />
+        </View>
       </ScrollView> 
     </SafeAreaView>
   );
@@ -25,6 +28,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F7F0E8',
     paddingBottom: 25,
     paddingTop: 25,
+  },
+  buttonContainer: {
+    marginTop: 16,
+    marginHorizontal: 16,
   },
   
 });
