@@ -10,11 +10,11 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <Header />
+        <Header/>
         <SearchBar/>
         <Categories/>
         <TaskList/>
-      </ScrollView>
+      </ScrollView> 
     </SafeAreaView>
   );
 };

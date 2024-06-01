@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     padding: 8,
     marginBottom: 16,
+    margin: 10
   },
   searchBox: {
     flexDirection: 'row',
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     borderRadius: 14,
-    padding: 8,
+    // padding: 8,
     height: 49,
   },
   searchIcon: {
