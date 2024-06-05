@@ -41,7 +41,7 @@ const App = () => {
   const renderCategory = ({ item }) => (
     <View style={styles.categoryCard}>
       <Text style={styles.categoryText}>{item.title}</Text>
-      <Text style={styles.taskCount}>{item.tasks} Tasks</Text>
+      <Text style={styles.taskCount}>{item.tasks}</Text>
       <Image source={item.image} style={styles.categoryImage} />
     </View>
   );
